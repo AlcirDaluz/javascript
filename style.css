@@ -1,23 +1,45 @@
 body {
-    background-color: #eeeeee;
+	background-color: #eeeeee;
 }
 
-input {
-    padding: 10px;
-    font-size: 14px;
+aside {
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 999;
+	display: flex;
 }
 
-.azul {
-    background-color: #0000ff;
-    color: #ffffff;
+#menu-opener {
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	margin-top: 10px;
+	margin-right: 10px;
 }
 
-.vermelho {
-    background-color: #ff0000;
-    color: #ffffff;
+#menu-area {
+	width: 0px;
+	height: 100vh;
+	background-color: #cccccc;
+	overflow-x: hidden;
+	overflow-y: auto;
+	transition: all ease .5s;
 }
 
-.verde {
-    background-color: #00ff00;
-    color: #000000;
+#menu-area ul,
+#menu-area li {
+	padding: 0;
+	list-style: none;
+}
+
+#menu-area li {
+	display: block;
+	padding: 10px;
+	color: #555555;
+	cursor: pointer;
+}
+
+#menu-area li:hover {
+	background-color: #dddddd;
 }
